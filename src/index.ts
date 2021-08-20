@@ -114,7 +114,7 @@ export function patchRollouts(
   if (typeof percentage != "number" || isNaN(percentage) || percentage < 0 || percentage > 100) {
     throw new Error(`patchRollouts: invalid percentage ${percentage}`)
   }
-  if (typeof timestamp != "number" || isNaN(timestamp) || timestamp < 0) {
+  if (typeof timestamp != "number" || isNaN(timestamp) || timestamp <= 0) {
     throw new Error(`patchRollouts: invalid timestamp ${timestamp}`)
   }
 
