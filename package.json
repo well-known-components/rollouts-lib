@@ -1,25 +1,26 @@
 {
-  "name": "@well-known-components/base-component",
+  "name": "@well-known-components/rollouts-lib",
   "version": "1.0.0",
-  "description": "base component",
+  "description": "Progressive rollouts helpers",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {},
+  
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/well-known-components/base-component.git"
+    "url": "git+https://github.com/well-known-components/rollouts-lib.git"
   },
   "keywords": [],
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/well-known-components/base-component/issues"
+    "url": "https://github.com/well-known-components/rollouts-lib/issues"
   },
   "prettier": {
     "printWidth": 120,
     "semi": false
   },
-  "homepage": "https://github.com/well-known-components/base-component#readme",
+  "homepage": "https://github.com/well-known-components/rollouts-lib#readme",
   "devDependencies": {
     "@microsoft/api-extractor": "^7.17.0",
     "typescript": "^4.3.5",
@@ -27,7 +28,12 @@
     "jest": "^27.0.6",
     "ts-jest": "^27.0.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/murmurhash3js": "^3.0.2",
+    "@types/semver": "^7.3.8",
+    "murmurhash3js": "^3.0.1",
+    "semver": "^7.3.5"
+  },
   "files": [
     "dist"
   ]
